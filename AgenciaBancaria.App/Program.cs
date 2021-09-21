@@ -23,10 +23,12 @@ namespace AgenciaBancaria.App {
                 contaCorrente.ConsultarSaldo(senha);
                 contaCorrente.Sacar(50, senha);
                 contaCorrente.ConsultarSaldo(senha);
-                contaCorrente.Depositar(100, senha);;
+                contaCorrente.Depositar(100, senha);
+                contaCorrente.ConsultarSaldo(senha);
+                contaCorrente.Sacar(51, senha);
                 contaCorrente.ConsultarSaldo(senha);
             } catch (Exception erro) {
-                Console.WriteLine(erro);
+                Console.WriteLine(erro.Message);
             }
         }
     }
